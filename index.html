@@ -8,12 +8,25 @@
 body{
   margin:0;
   font-family:Arial;
-  background:#000;
+  background:url('bg.jpg') no-repeat center center fixed;
+  background-size:cover;
   color:#fff;
   text-align:center;
 }
-h1{color:#00ff88;}
-section{padding:80px 20px;}
+
+.overlay{
+  background:rgba(0,0,0,0.7);
+  min-height:100vh;
+}
+
+h1{
+  color:#00ff88;
+}
+
+section{
+  padding:80px 20px;
+}
+
 .btn{
   display:inline-block;
   padding:12px 25px;
@@ -21,12 +34,15 @@ section{padding:80px 20px;}
   background:#00ff88;
   color:#000;
   border-radius:8px;
+  font-weight:bold;
 }
+
 .buy{
   background:#ffcc00;
 }
+
 .box{
-  background:#071a12;
+  background:rgba(0,0,0,0.8);
   padding:20px;
   margin:20px auto;
   max-width:500px;
@@ -36,6 +52,8 @@ section{padding:80px 20px;}
 </head>
 
 <body>
+
+<div class="overlay">
 
 <section>
   <h1>🐒 KLOOK TOKEN</h1>
@@ -57,16 +75,19 @@ section{padding:80px 20px;}
   <div class="box">
     <p><b>Name:</b> KLOOK</p>
     <p><b>Ticker:</b> $KLOOK</p>
+
     <p><b>Contract:</b></p>
     <p id="c">0x0ef424d3d5d67bd2774b556d138be44e833541ac</p>
+
     <button onclick="copy()">Copy</button>
   </div>
 </section>
 
 <section>
   <h1>About</h1>
+
   <div class="box">
-    KLOOK is a fun community token on PulseChain 🐒🔥
+    KLOOK is a fun community-driven token on PulseChain 🐒🔥
   </div>
 </section>
 
@@ -76,6 +97,8 @@ section{padding:80px 20px;}
   <a class="btn" href="https://t.me/Klook88888">Telegram</a>
   <a class="btn" href="https://discord.gg/WMk7aMzZY">Discord</a>
 </section>
+
+</div>
 
 <script>
 function copy(){
